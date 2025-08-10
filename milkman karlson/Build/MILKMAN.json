@@ -1,0 +1,16 @@
+{
+"companyName": "Dani",
+"productName": "MilkmanKarlson",
+"productVersion": "0.2",
+"dataUrl": "MILKMAN.data.unityweb",
+"wasmCodeUrl": "MILKMAN.wasm.code.unityweb",
+"wasmFrameworkUrl": "MILKMAN.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "MILKMAN.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.13f1"
+}
