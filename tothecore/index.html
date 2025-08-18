@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Unity WebGL Player | ToTheCore</title>
+	</head>
+	<body style="text-align: center">
+		<canvas
+			id="unity-canvas"
+			width="100vw"
+			height="100vh"
+			tabindex="-1"
+			style="width: 100vw; height: 100vh; background: #26251e; overflow: hidden"
+		></canvas>
+		<script src="Build/TTCPort.loader.js"></script>
+		<script>
+			createUnityInstance(document.querySelector("#unity-canvas"), {
+				dataUrl: "Build/TTCPort.data.unityweb",
+				frameworkUrl: "Build/TTCPort.framework.js.unityweb",
+				codeUrl: "Build/TTCPort.wasm.unityweb",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "SomethingExtra",
+				productName: "ToTheCore",
+				productVersion: "1.0",
+				// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+				// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Go To Bed web port</title>
+	</head>
+	<body style="text-align: center; padding: 0; border: 0; margin: 0">
+		<canvas
+			id="unity-canvas"
+			width="100vw"
+			height="100vh"
+			tabindex="-1"
+			style="width: 100vw; height: 100vh; background: #26251e; overflow: hidden"
+		></canvas>
+		<script src="Build/GTBPort.loader.js"></script>
+		<script>
+			if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+				var meta = document.createElement("meta");
+				meta.name = "viewport";
+				meta.content =
+					"width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes";
+				document.getElementsByTagName("head")[0].appendChild(meta);
+
+				var canvas = document.querySelector("#unity-canvas");
+				canvas.style.width = "100vw";
+				canvas.style.height = "100vh";
+				canvas.style.position = "fixed";
+				canvas.style.overflow = "hidden";
+
+				document.body.style.textAlign = "left";
+			}
+
+			createUnityInstance(document.querySelector("#unity-canvas"), {
+				dataUrl: "Build/GTBPort.data",
+				frameworkUrl: "Build/GTBPort.framework.js",
+				codeUrl: "Build/GTBPort.wasm",
+				streamingAssetsUrl: "StreamingAssets",
+				companyName: "Joseph Mularczyk",
+				productName: "Go To Bed",
+				productVersion: "1.0",
+				// matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+				// devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+			});
+		</script>
+	</body>
+</html>
