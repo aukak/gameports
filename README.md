@@ -13,5 +13,5 @@ slqnt:
 - To the core
 - The Deadseat
 ---------------
-# more at [truffled.lol](https:/truffled.lol): & [NPA](https:/discord.gg/CDd8BFcyWW):
+# more at [truffled.lol](https://truffled.lol) & [NPA Discord](https://discord.gg/CDd8BFcyWW)
 
