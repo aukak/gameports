@@ -3,7 +3,6 @@
 aukak:
 - Touhou Mother
 - Milkman Karlson
-- Sonic Mania
 ---------------
 slqnt:
 - Bowerwhelm
