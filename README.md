@@ -11,6 +11,7 @@ aukak:
 - granny : https://github.com/aukak/Granny
 - hollow knight: silksong : https://github.com/web-ports/hollow-knight-silksong
 - running fred : https://github.com/aukak/running-fred
+- untitled goose game : https://github.com/webporting/Untitled-Goose-Game
 ---------------
 # more at [truffled.lol](https://truffled.lol) & [NPA Discord](https://discord.gg/CDd8BFcyWW)
 
